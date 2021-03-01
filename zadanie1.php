@@ -41,7 +41,7 @@ table,tr,td{
         <tr><td>IDH</td><td>Hobby</td></tr>
         <?php 
             $zapytanie_do_bazy = $polaczenie->query("SELECT idh,nazwa FROM Hobby ");
-             while list($idh,$nazwa) = mysqli_fetch_array($zapytanie_do_bazy)){
+             while( list($idh,$nazwa) = mysqli_fetch_array($zapytanie_do_bazy)){
             echo("
                     <tr><td>$idh</td><td>$nazwa</td></tr>
             ");
